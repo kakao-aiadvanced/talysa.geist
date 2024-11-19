@@ -236,3 +236,55 @@ be on one of the ends.
 
 Note that these arrangements are mutually exclusive, meaning only one of them can be true.
 
+# Prompt Compression 예제 원본
+>>>"""
+John: So, um, I've been thinking about the project, you know, and I believe we need to, uh, make some changes. I mean, we want the project to succeed, right? So, like, I think we should consider maybe revising the timeline.
+Sarah: I totally agree, John. I mean, we have to be realistic, you know. The timeline is, like, too tight. You know what I mean? We should definitely extend it.
+"""
+The classic "ums" and "likes" of a hesitant but well-intentioned 
+conversation! Here's a breakdown:
+
+* John starts by expressing his thoughts on the project, using filler 
+words ("um", "like") to indicate he's not entirely sure about his ideas. 
+He then tries to emphasize the importance of the project's success.
+* Sarah quickly agrees with John, also using informal language ("I totally 
+agree", "you know what I mean?"). She mirrors his hesitation by saying the 
+timeline is "too tight" and suggesting it needs to be extended.
+
+This exchange shows a collaborative tone, with both participants 
+acknowledging the need for change. However, their use of filler words and 
+uncertain phrasing might suggest they're not entirely confident in their 
+proposal.
+
+# Prompt Compression 예제 수동 개선
+>>>"""
+You are John. Read the following conversation and answer to Sarah.
+
+John: So, um, I've been thinking about the project, you know, and I believe we need to, uh, make some changes. I mean, we want the project to succeed, right? So, like, I think we should consider maybe revising the timeline.
+Sarah: I totally agree, John. I mean, we have to be realistic, you know. The timeline is, like, too tight. You know what I mean? We should definitely extend it.
+
+John:
+"""
+Sarah! Yeah, I completely agree with you. I think we're all getting a 
+little overwhelmed with the current deadline. If we extend the timeline, I 
+think we can really focus on delivering high-quality results instead of 
+rushing to meet an impossible goal. What did you have in mind for the new 
+timeline?
+
+# Prompt Compression 예제 Compression
+>>>"""
+John: So, um, I've been thinking about the project, you know, and I believe we need to, uh, make some changes. I mean, we want the project to succeed, right? So, like, I think we should consider maybe revising the timeline.
+Sarah: I totally agree, John. I mean, we have to be realistic, you know. The timeline is, like, too tight. You know what I mean? We should definitely extend it.
+"""
+>>>"""
+John : So, um ' ve been thinking about project, believe we need to, make changes., want project to succeed, right?, like, think should consider maybe revising timeline. 
+ Sarah : agree, John., have to be realistic,. timeline is, like, too tight. know what mean? should extend it. 
+"""
+Sarah: I totally agree, John. I mean, we have to be realistic, you know. 
+The timeline is, like, too tight. You know what I mean? We should 
+definitely extend it.
+
+John: Yeah, makes sense. So, if we extend the timeline by, say, two weeks, 
+do you think that would give us enough time to, uh, finish all the tasks 
+and make sure everything is up to par?
+
